@@ -88,7 +88,6 @@ function Addnine() {
 }
 
 function EqualFormula(){
-    let temp = display.textContent;
     try{
       const resault = math.evaluate(display.textContent);
       display.textContent = resault;
@@ -97,7 +96,4 @@ function EqualFormula(){
     catch{
         display.textContent = "invalid formula"
     }
-    setTimeout(() => {
-      display.textContent = temp;
-    }, 2000);
 }
