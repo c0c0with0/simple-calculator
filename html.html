@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img\1176289.png" type="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Chewy&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Simple Calculator </title>
+</head>
+<body>
+    <video src="video\vecteezy_windy-day-in-a-green-plain_8670267_1.webm" autoplay loop muted class="backgroundvideo" id="backgroundvideo"></video>
+    <img src="gifs/craawler cat.gif" class="craawler">
+    <div class="flycat">
+        <img src="gifs/flying cat.gif" class="flyingcat" alt="">
+    </div>
+    <div class="calcbody">
+        <div class="display" id="display">
+        </div>
+            <div class="toppannle">
+                <button class="topButt" onclick="clearDisplay()">C</button>
+                <button class="topButt" onclick="AddParLeft()">(</button>
+                <button class="topButt" onclick="AddParRight()">)</button>
+                <button class="topButt" onclick="EqualFormula()">=</button>
+            </div>
+        <div class="pannel">
+            <div class="actuators">
+                <button class="actuatorButt" onclick="AddPlus()">+</button>
+                <button class="actuatorButt" onclick="AddMinus()">-</button>
+                <button class="actuatorButt" onclick="AddMulti()">*</button>
+                <button class="actuatorButt" onclick="AddDivi()">/</button>
+            </div>
+            <div class="number-input">
+                <div class="row">
+                    <button class="numberButt" onclick="AddDot()">.</button>
+                    <button class="numberButt" onclick="ReversPolar()">+-</button>
+                    <button class="numberButt" onclick="AddZero()">0</button>
+                </div>
+                <div class="row">  
+                    <button class="numberButt" onclick="Addone()">1</button>
+                    <button class="numberButt" onclick="Addtwo()">2</button>
+                    <button class="numberButt" onclick="Addthree()">3</button>
+                </div>
+                <div class="row">      
+                    <button class="numberButt" onclick="Addfour()">4</button>
+                    <button class="numberButt" onclick="Addfive()">5</button>
+                    <button class="numberButt" onclick="Addsix()">6</button>
+                </div>
+                <div class="row"> 
+                    <button class="numberButt" onclick="Addseven()">7</button>
+                    <button class="numberButt" onclick="Addeight()">8</button>
+                    <button class="numberButt" onclick="Addnine()">9</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.min.js"></script>
+    <script src="style.js"></script>
+</body>
+</html>

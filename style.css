@@ -1,0 +1,184 @@
+
+/* general style */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'share tech mono', sans-serif;
+}
+
+
+/* animation section */
+
+@keyframes crawl {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(1900px);
+     }
+}
+
+
+
+/*main styling*/
+
+.craawler{
+    z-index: -1;
+    width: 250px;
+    position: fixed;
+    margin: 0;
+    bottom: -19px;
+    left: -250px;
+    animation: crawl 30s infinite;
+}
+
+.flycat{
+    z-index: -1;
+    position: fixed;
+    height: 70vh;
+    right: 10%;
+    top: 0;
+    overflow: hidden;
+}
+.flyingcat{
+    width: 150px ;
+}
+
+.backgroundvideo{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    position: fixed;
+}
+
+body button{
+    cursor: pointer;
+}
+
+.calcbody{
+    background-color: #445a64 ;
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+}
+
+.display{
+   background-color:hsl(88, 48%, 76%);
+   border-radius: 10px;
+   margin: 10px 15px;
+   padding:15px ;
+   font-size: 1.5rem;
+   height: 35px;
+   white-space: nowrap;
+   overflow: auto;
+
+}
+
+.pannel{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.actuatorButt{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(37, 93%, 55%, 0.8);
+    margin: 8px 5px ;
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    font-family: 'share tech mono', sans-serif;
+
+}
+
+.actuatorButt:hover {
+    background-color: hsla(37, 93%, 55%, 0.9);
+}
+
+.actuatorButt:active {
+   background-color: hsla(37, 93%, 40%, 0.9); 
+}
+
+.topButt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color:hsla(92, 47%, 39%, 0.8);
+    margin: 5px 15px;
+    padding: 15px;
+    width: 60px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'share tech mono', sans-serif;
+}
+
+.topButt:hover{
+   background-color:hsla(92, 47%, 39%, 0.9); 
+}
+
+.topButt:active{
+  background-color:hsla(92, 47%, 25%, 0.9);  
+}
+
+.numberButt{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 0.8);
+    text-align: center;
+    margin: 8px 15px;
+    padding: 20px;
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+    font-family: 'share tech mono', sans-serif;
+}
+
+.numberButt:hover{
+   background-color: hsla(0, 0%, 85%, 0.9); 
+}
+
+.numberButt:active{
+    background-color: hsla(0, 0%, 65%, 0.9);
+}
+
+.number-input{
+    display: flex;
+    flex-direction: column-reverse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.row{
+   display: flex;
+   flex-direction: row;  
+}
+
+.actuators{
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.toppannle{
+    display: flex;
+    justify-content: center;
+
+}
