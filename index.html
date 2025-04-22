@@ -11,58 +11,76 @@
     <title>Simple Calculator </title>
 </head>
 <body>
-    <video src="video\vecteezy_windy-day-in-a-green-plain_8670267_1.webm" autoplay loop muted class="backgroundvideo" id="backgroundvideo"></video>
-    <img src="gifs/craawler cat.gif" class="craawler">
-    <div class="flycat">
-        <img src="gifs/flying cat.gif" class="flyingcat" alt="">
-    </div>
-    <div class="calcbody">
-        <div class="display" id="display">
+        <video src="video\vecteezy_windy-day-in-a-green-plain_8670267_1.webm" autoplay loop muted class="backgroundvideo" id="backgroundvideo"></video>
+        <img src="gifs/craawler cat.gif" class="craawler">
+        <div class="flycat">
+            <img src="gifs/flying cat.gif" class="flyingcat" alt="">
         </div>
+        <div class="calcbody">
+               <div class="discontainer"> 
+                    <div class="smallscreen" id="smallscreen1">
+                    </div>
+                    <div class="smallscreen" id="smallscreen2">
+                    </div>
+                    <div class="display" id="display">
+                        main text
+                    </div>
+               </div>
+            <div class="scin-act">
+                <button class="sci" onclick="Tan()">Tan<sup id="sup">(-1)</sup></button>
+                <button class="sci" onclick="Cot()">Cot<sup id="sup">(-1)</sup></button>
+                <button class="sci" onclick="Sin()">Sin<sup id="sup">(-1)</sup></button>
+                <button class="sci" onclick="Cos()">Cos<sup id="sup">(-1)</sup></button>
+                <button class="sci" onclick="Deg()">Deg</button>
+                <button class="sci" id="shift" onclick="Shift()">Shift</button>
+            </div>
             <div class="toppannle">
                 <button class="topButt" onclick="clearDisplay()">C</button>
                 <button class="topButt" onclick="AddParLeft()">(</button>
                 <button class="topButt" onclick="AddParRight()">)</button>
                 <button class="topButt" onclick="EqualFormula()">=</button>
             </div>
-        <div class="pannel">
-            <div class="actuators">
-                <button class="actuatorButt" onclick="AddPlus()">+</button>
-                <button class="actuatorButt" onclick="AddMinus()">-</button>
-                <button class="actuatorButt" onclick="AddMulti()">*</button>
-                <button class="actuatorButt" onclick="AddDivi()">/</button>
-            </div>
-            <div class="number-input">
-                <div class="row">
-                    <button class="numberButt" onclick="AddDot()">.</button>
-                    <button class="numberButt" onclick="ReversPolar()">+-</button>
-                    <button class="numberButt" onclick="AddZero()">0</button>
+            <div class="pannel">
+                <div class="actuators">
+                    <button class="actuatorButt" onclick="AddPlus()">+</button>
+                    <button class="actuatorButt" onclick="AddMinus()">-</button>
+                    <button class="actuatorButt" onclick="AddMulti()">*</button>
+                    <button class="actuatorButt" onclick="AddDivi()">/</button>
                 </div>
-                <div class="row">  
-                    <button class="numberButt" onclick="Addone()">1</button>
-                    <button class="numberButt" onclick="Addtwo()">2</button>
-                    <button class="numberButt" onclick="Addthree()">3</button>
-                </div>
-                <div class="row">      
-                    <button class="numberButt" onclick="Addfour()">4</button>
-                    <button class="numberButt" onclick="Addfive()">5</button>
-                    <button class="numberButt" onclick="Addsix()">6</button>
-                </div>
-                <div class="row"> 
-                    <button class="numberButt" onclick="Addseven()">7</button>
-                    <button class="numberButt" onclick="Addeight()">8</button>
-                    <button class="numberButt" onclick="Addnine()">9</button>
+                <div class="number-input">
+                    <div class="row">
+                        <button class="numberButt" onclick="AddZero()">0</button>
+                        <button class="numberButt" onclick="AddDot()">.</button>
+                        <button class="numberButt" onclick="Erase()"><svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+	                                                                        <path d="M7.85 5.15a.5.5 0 0 0-.707.707l2.15 2.15l-2.15 2.15a.5.5 0 0 0 .707.707L10 8.714l2.15 2.15a.5.5 0 0 0 .707-.707l-2.15-2.15l2.15-2.15a.5.5 0 0 0-.707-.707L10 7.3z" fill="currentColor"/>
+	                                                                        <path d="M6.78 3c-.376 0-.739.141-1.02.396l-4.6 4.24a.5.5 0 0 0 0 .736l4.6 4.24c.277.255.64.396 1.02.396h6.72a1.5 1.5 0 0 0 1.5-1.5v-7a1.5 1.5 0 0 0-1.5-1.5H6.78zm-1.69-.339A2.5 2.5 0 0 1 6.78 2h6.72A2.5 2.5 0 0 1 16 4.5v7a2.5 2.5 0 0 1-2.5 2.5H6.78a2.5 2.5 0 0 1-1.69-.661l-4.6-4.24a1.504 1.504 0 0 1 0-2.21l4.6-4.24z" fill="currentColor" fillRule="evenodd"/>
+                                                                        </svg></button>
+                    </div>
+                    <div class="row">  
+                        <button class="numberButt" onclick="Addone()">1</button>
+                        <button class="numberButt" onclick="Addtwo()">2</button>
+                        <button class="numberButt" onclick="Addthree()">3</button>
+                    </div>
+                    <div class="row">      
+                        <button class="numberButt" onclick="Addfour()">4</button>
+                        <button class="numberButt" onclick="Addfive()">5</button>
+                        <button class="numberButt" onclick="Addsix()">6</button>
+                    </div>
+                    <div class="row"> 
+                        <button class="numberButt" onclick="Addseven()">7</button>
+                        <button class="numberButt" onclick="Addeight()">8</button>
+                        <button class="numberButt" onclick="Addnine()">9</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
 
 
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.1/math.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjs@11/lib/browser/math.js"></script>
     <script src="style.js"></script>
 </body>
 </html>

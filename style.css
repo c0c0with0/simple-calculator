@@ -24,7 +24,17 @@ body{
      }
 }
 
-
+@keyframes blink {
+    0%{
+        color: hsla(0, 0%, 50%, 0.5);
+    }
+    50%{
+        color: hsl(0, 100%, 50%);
+    }
+    100%{
+        color: hsla(0, 0%, 50%, 0.5);
+    }
+}
 
 /*main styling*/
 
@@ -77,8 +87,25 @@ body button{
    font-size: 1.5rem;
    height: 35px;
    white-space: nowrap;
-   overflow: auto;
+   overflow-x: auto;
+   overflow-y: hidden;
 
+}
+
+.smallscreen{
+    position: fixed;
+    z-index: +1;
+    margin: 3px;
+    width: auto;
+    font-size: 0.7em;
+}
+
+#smallscreen1{
+    transform: translateX(250px);
+}
+
+#smallscreen2{
+    transform: translateX(295px);
 }
 
 .pannel{
@@ -181,4 +208,34 @@ body button{
     display: flex;
     justify-content: center;
 
+}
+
+.scin-act{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 15px;
+
+}
+
+.sci{
+    border: none;
+    border-radius: 30%;
+    font-size: 0.9rem;
+    background-color: hsl(32, 100%, 50%);
+
+}
+
+#shift{
+    background-color: rgba(255, 0, 0, 0.6);
+    color: white;
+}
+
+#sup{
+    font-size: 0.6em;
+    color: hsla(0, 0%, 50%, 0.5);
+}
+
+.sup{
+    font-size: 0.6em;
+    animation: blink 1.5s infinite forwards;
 }
